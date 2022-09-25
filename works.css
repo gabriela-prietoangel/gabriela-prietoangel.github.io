@@ -1,0 +1,117 @@
+
+
+
+/* unvisited link */
+a:link {
+    color: blue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: blue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: hotpink;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+  .contenu {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+img {
+  float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+body{
+    font-family: "arial";
+    margin: 24px;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.column2 {
+  float: right;
+  width: 60%;
+}
+
+/* Clear floats after the columns 
+.row:after {
+  display: table;
+  clear: both;
+}
+*/
+
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+  * {
+    margin: 0px;
+    scroll-behavior:smooth;
+}
+
+.menu_title {
+    color: blue;
+    font-size:24px;
+}
+ .menu_subtitle {
+    color: orangered;
+    font-size: smaller;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*config du go back (je l'ai mis hors de l'index/menu pour faire un espace */
+.button_back{ 
+  color: blue;
+  font-size: smaller;
+  padding-top: 35px;
+}
