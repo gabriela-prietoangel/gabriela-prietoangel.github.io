@@ -145,7 +145,7 @@ a.lecaddie:hover {
   grid-column: 1/4;
 }
 
-.titre{
+.titre_ticket{
   grid-column: 1/4;
   font-size: 80px;
   margin-top: 10%;
