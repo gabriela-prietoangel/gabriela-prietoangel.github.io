@@ -1,0 +1,1330 @@
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url(font/terminal-grotesque-webfont.woff) format('woff'),
+  url(font/terminal-grotesque-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "Ac437 IBM Model3x Alt4";
+  src: url(font/Ac437_IBM_Model3x_Alt4.ttf) format("truetype");
+}
+
+
+@font-face {
+  font-family: "Mx437 IBM Model3x Alt4";
+  src: url(font/Mx437_IBM_Model3x_Alt4.ttf) format("truetype");
+}
+
+
+body{
+    font-family: "Ac437 IBM Model3x Alt4", helvetica;
+    font-size: 33px;
+    color: #C52C14;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 20%;
+    margin: 0%;
+}
+
+
+.navigation_films{
+  grid-column: 4/5;
+}
+
+.nav_films{
+  margin: 0%;
+  text-align: right;
+  position:fixed;
+  top:0;
+}
+
+.caddie_panier{
+  position: fixed;
+  bottom: 3%;
+  margin-left: 2%;
+  max-width: 75%;
+}
+
+.panier{
+  position: fixed ;
+  bottom: 0%;
+  margin-left: 9%;
+  font-size: 25px;
+  color: white;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr;
+  align-items:center;
+  justify-items: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+  position:fixed;
+  top:0;
+  left: 0%;
+  right:20%;
+  height: 60px;
+  
+  background-color: white;
+}
+
+.nav_panier{
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr;
+  align-items:center;
+  justify-items: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+  position:fixed;
+  top:0;
+  left: 0%;
+  right:20%;
+  height: 60px;
+}
+
+
+.caddie{
+  max-width: 84%;
+  align-self: center;
+  justify-self: center;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+a.lecaddie:link {color:#C52C14;}
+a.lecaddie:visited {color:#C52C14;}
+a.lecaddie:hover {
+  border: hidden;
+}
+
+.supermarche{
+  grid-column: 1/4;
+  margin-bottom: 25px;
+  position:fixed;
+  top:0;
+  left: 0%;
+  right:20%;
+  height: 60px;
+  margin-left: 2%;
+}
+
+.ticketcaisse{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2%;
+}
+
+.titre_site{
+  margin-top: 60px;
+  max-width: 95%;
+  text-align: center;
+  grid-column: 1/4;
+  margin-bottom: 2%;
+}
+
+#festival{
+  grid-column: 1/4;
+}
+
+.festival{
+  grid-column: 2/4;
+  text-align: right;
+  margin-bottom: 2%;
+}
+
+.festival2{
+  grid-column: 1/4;
+  margin-bottom: 2%;
+}
+
+#programmation{
+  grid-column: 1/4;
+}
+
+.titre{
+  grid-column: 1/4;
+  font-size: 80px;
+  margin-top: 10%;
+  margin-bottom: 0%;
+}
+
+.programmation{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5%;
+}
+
+.description{
+  grid-column: 1/2;
+  margin-bottom: 2%;
+  font-size: 37px;
+
+}
+
+.realisateur{
+  grid-column: 2/3;
+  margin-bottom: 2%;
+  text-align: right;
+  font-size: 37px;
+}
+
+.horaire{
+  grid-column: 3/4;
+  margin-bottom: 2%;
+  text-align: right;
+  font-size: 37px;
+}
+
+
+.nomfilm{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 1/2;
+  line-height : 40px
+}
+
+.nomreal{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 2/3;
+  text-align: right;
+  line-height : 40px
+}
+
+.nomhoraire{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 3/4;
+  text-align: right;
+  line-height : 40px;
+}
+
+.total{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5%;
+  line-height: 5px;
+  border-bottom: 3px dashed #C52C14;
+  border-top: 3px dashed #C52C14;
+}
+
+
+
+.totalfilm{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  font-size: 37px;
+  grid-column: 1/2;
+}
+
+
+.totalreal{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  font-size: 37px;
+  grid-column: 2/3;
+  text-align: right;
+}
+
+.totalhoraire{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  font-size: 37px;
+  grid-column: 3/4;
+  text-align: right;
+}
+
+#pratiques{
+  grid-column: 1/4;
+}
+
+
+.salles{
+  grid-column: 1/2;
+  margin-bottom: 2%;
+  font-size: 55px;
+
+}
+
+.eur{
+  grid-column: 3/4;
+  margin-bottom: 2%;
+  font-size: 37px;
+  justify-self: center;
+  align-self: end;
+}
+
+.rayons{
+  grid-column: 2/4;
+  margin-bottom: 2%;
+  font-size: 37px;
+  justify-self: center;
+  align-self: end;
+}
+
+.salle1{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 3px dashed #C52C14;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+
+.super{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-column: 1/2;
+  font-size: 23px;
+  line-height: 0px;
+  margin: 20px;
+}
+
+.adresse{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-column: 1/3;
+  font-size: 23px;
+  justify-self: center;
+  line-height: 0px;
+  margin: 0px;
+}
+
+.fruit{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-row: 1/2;
+  grid-column: 3/4;
+  font-size: 23px;
+  justify-self: right;
+  line-height: 0px;
+  margin: 20px;
+}
+
+.salle2{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 3px dashed #C52C14;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+
+
+.fruit2{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-row: 1/3;
+  grid-column: 3/4;
+  font-size: 23px;
+  justify-self: right;
+  line-height: 0px;
+  margin: 20px;
+}
+
+.salle3{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+
+.note{
+  grid-column: 1/4;
+  font-size: 20px;
+}
+
+.ticket{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 3px dashed #C52C14;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+
+
+.entree{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-column: 1/2;
+  font-size: 23px;
+  line-height: 0px;
+  margin: 20px;
+}
+
+.reduc{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-size: 23px;
+  justify-self: center;
+  line-height: 0px;
+  line-height: 0px;
+  margin: 0px;
+
+}
+
+.prix{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-column: 3/4;
+  font-size: 23px;
+  justify-self: right;
+  line-height: 0px;
+  margin: 20px;
+}
+
+.prix2{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-column: 3/4;
+  font-size: 23px;
+  justify-self: right;
+  line-height: 0px;
+  margin: 0px;
+  margin-right: 20px;
+}
+
+.ticket2{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 3px dashed #C52C14;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+
+.ticket3{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+
+.entree3{
+  font-family: "Mx437 IBM Model3x Alt4", sans-serif;
+  grid-column: 1/3;
+  font-size: 23px;
+  line-height: 0px;
+  margin: 20px;
+}
+
+.bye{
+  grid-column: 1/4;
+  justify-self: center;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 55px;
+  margin-top: 250px;
+}
+
+#cb_panier{
+  grid-column: 1/5;
+  position: relative;
+  text-align: center;
+}
+
+.background-image{
+  background-image: url('./image/film1_panier.jpg');
+  background-size: cover;
+  grid-column: 1/5;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cashback_panier{
+  font-family: "Terminal Grotesque", sans-serif;
+  grid-column: 1/5;
+  font-size: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+
+}
+
+a.titrecblien:link {color:#C52C14;}
+a.titrecblien:visited {color:#C52C14;}
+a.titrecblien:hover {
+  color:whitesmoke;
+  text-decoration: none;
+  border: hidden;
+}
+
+
+
+.cashbackreal_panier{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a.titrerealcblien:link {color:#C52C14;}
+a.titrerealcblien:visited {color:#C52C14;}
+a.titrerealcblien:hover {
+  text-decoration: none;
+  border: hidden;
+}
+
+.dérouler{
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.dérouler_texte{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 23px;
+  position: absolute;
+  bottom: 23px;
+  right: 50px;
+}
+
+a.deroulerlien:link {color:whitesmoke;}
+a.deroulerlien:visited {color: whitesmoke;}
+a.deroulerlien:hover {
+  color:whitesmoke;
+  text-decoration: none;
+  border: hidden;
+}
+
+#six_panier{
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  text-align: center;
+}
+
+.sixieme_panier{
+  font-family: "Terminal Grotesque", sans-serif;
+  grid-column: 1/5;
+  font-size: 140px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-10%, -50%);
+  margin: 0;
+
+}
+
+.background-image2{
+  background-image: url('./image/film2_panier.jpg');
+  background-size: cover;
+  grid-column: 1/5;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#avion_panier{
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  text-align: center;
+}
+
+.avionsmom_panier{
+  font-family: "Terminal Grotesque", sans-serif;
+  grid-column: 1/5;
+  font-size: 140px;
+  position: absolute;
+  top: 41%;
+  left: 15%;
+  transform: translate(-8%, -50%);
+  margin: 0;
+  line-height: 120px;
+}
+
+
+
+.background-image3{
+  background-image: url('./image/film3_panier.jpg');
+  background-size: cover;
+  grid-column: 1/5;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#ted_panier{
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  text-align: center;
+}
+
+.background-image4{
+  background-image: url('./image/film4_panier.jpg');
+  background-size: cover;
+  grid-column: 1/5;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#zombie_panier{
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  text-align: center;
+}
+
+.zombietitre_panier{
+  font-family: "Terminal Grotesque", sans-serif;
+  grid-column: 1/5;
+  font-size: 140px;
+  position: absolute;
+  top: 41%;
+  left: 25%;
+  transform: translate(-10%, -50%);
+  margin: 0;
+  line-height: 120px;
+}
+
+.background-image5{
+  background-image: url('./image/film5_panier.jpg');
+  background-size: cover;
+  grid-column: 1/5;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#gremlins_panier{
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  text-align: center;
+}
+
+.background-image6{
+  background-image: url('./image/film6_panier.jpg');
+  background-size: cover;
+  grid-column: 1/5;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#info_film{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  margin-top: 30px;
+
+
+}
+#info_film img{
+
+  height: auto;
+  max-width: 90%;
+}
+
+.affiche_cashback{
+  grid-column: 1/2;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-top: 10%;
+}
+
+.fiche_film{
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+}
+
+.titre{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 5px;
+  line-height: 15px;
+
+}
+
+.titre_film{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 115px;
+  grid-column: 1/9;
+  grid-row: 1/2;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 95px;
+}
+
+.real{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 3/9;
+  grid-row: 2/3;
+  margin: 5px;
+  line-height: 10px;
+
+}
+
+.real_nom{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 25px;
+  grid-column: 3/9;
+  grid-row: 2/3;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 25px;
+}
+
+.date{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 5px;
+  line-height: 10px;
+
+}
+
+.date_nom{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 25px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 25px;
+}
+
+.duree{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 5px;
+  line-height: 10px;
+
+}
+
+.duree_nom{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 25px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 25px;
+}
+
+.public{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 5/9;
+  grid-row: 4/5;
+  margin: 5px;
+  line-height: 10px;
+
+}
+
+.genre{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 23px;
+  grid-column: 5/9;
+  grid-row: 4/5;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 31px;
+}
+
+.casting{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 2/9;
+  grid-row: 5/6;
+  margin: 5px;
+  line-height: 10px;
+
+}
+
+.casting_nom{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 23px;
+  grid-column: 2/9;
+  grid-row: 5/6;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  line-height: 25px;
+}
+
+.resume{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 25px;
+  grid-column: 1/9;
+  grid-row: 6/7;
+  margin: 5px;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+
+.apartir{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 60px;
+  text-align: right;
+  grid-column: 5/9;
+  grid-row: 7/8;
+  margin: 5px;
+  margin-bottom: 1px;
+  line-height: 40px;
+}
+
+.apartir_nom{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  text-align: right;
+  grid-column: 5/9;
+  grid-row: 9/10;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.screen_cashback_1{
+  background-image: url('./image/screen_cashback_1.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 10/11;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_cashback_2{
+  background-image: url('./image/screen_cashback_2.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 11/12;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_cashback_3{
+  background-image: url('./image/screen_cashback_3.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 13/14;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_cashback_5{
+  background-image: url('./image/screen_cashback_5.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 12/13;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_cashback_4{
+  background-image: url('./image/screen_cashback_4.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 14/15;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.titresix_film{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 115px;
+  grid-column: 1/9;
+  grid-row: 1/2;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 80px;
+}
+
+.titresix{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 5px;
+  line-height: 5px;
+
+}
+
+.fichesix_film{
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.screen_six_1{
+  background-image: url('./image/screen_six_1.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 10/11;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_six_2{
+  background-image: url('./image/screen_six_2.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 11/12;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_six_3{
+  background-image: url('./image/screen_six_3.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 13/14;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_six_4{
+  background-image: url('./image/screen_six_4.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 12/13;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.resumesix{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 25px;
+  grid-column: 1/9;
+  grid-row: 6/7;
+  margin: 5px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.titreavion_film{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 98px;
+  grid-column: 1/9;
+  grid-row: 1/2;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 70px;
+}
+
+.screen_avion_1{
+  background-image: url('./image/screen_avion_1.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 10/11;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_avion_2{
+  background-image: url('./image/screen_avion_2.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 11/12;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_avion_3{
+  background-image: url('./image/screen_avion_3.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 13/14;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_avion_4{
+  background-image: url('./image/screen_avion_4.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 12/13;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_avion_5{
+  background-image: url('./image/screen_avion_5.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 14/15;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_ted_1{
+  background-image: url('./image/screen_ted_1.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 10/11;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_ted_2{
+  background-image: url('./image/screen_ted_2.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 11/12;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_ted_3{
+  background-image: url('./image/screen_ted_3.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 13/14;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_ted_4{
+  background-image: url('./image/screen_ted_4.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 12/13;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.realzombie{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 3/9;
+  grid-row: 2/3;
+  margin: 5px;
+  margin-top: 10px;
+  line-height: 5px;
+
+}
+
+.realzombie_nom{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 25px;
+  grid-column: 3/9;
+  grid-row: 2/3;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.castingzombie{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 2/9;
+  grid-row: 5/6;
+  margin: 5px;
+  line-height: 3px;
+
+}
+.castingzombie_nom{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 23px;
+  grid-column: 2/9;
+  grid-row: 5/6;
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+.resumezombie{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 25px;
+  grid-column: 1/9;
+  grid-row: 6/7;
+  margin: 5px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+.apartirzombie{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 60px;
+  text-align: right;
+  grid-column: 5/9;
+  grid-row: 7/8;
+  margin: 5px;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.screen_zombie_1{
+  background-image: url('./image/screen_zombie_1.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 10/11;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_zombie_2{
+  background-image: url('./image/screen_zombie_2.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 11/12;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_zombie_3{
+  background-image: url('./image/screen_zombie_3.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 13/14;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_zombie_4{
+  background-image: url('./image/screen_zombie_4.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 12/13;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.publicgremlins{
+  font-family: "Ac437 IBM Model3x Alt4", sans-serif;
+  font-size: 23px;
+  grid-column: 5/9;
+  grid-row: 4/5;
+  margin: 5px;
+  line-height: 1px;
+
+}
+
+.genregremlins{
+  font-family: "Terminal Grotesque", sans-serif;
+  font-size: 23px;
+  grid-column: 5/9;
+  grid-row: 4/5;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.screen_gremlins_1{
+  background-image: url('./image/screen_gremlins_1.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 10/11;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_gremlins_2{
+  background-image: url('./image/screen_gremlins_2.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 11/12;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_gremlins_3{
+  background-image: url('./image/screen_gremlins_3.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 13/14;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.screen_gremlins_4{
+  background-image: url('./image/screen_gremlins_4.jpg');
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 12/13;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+
+
+/* unvisited link */
+a:link {
+    color: #C52C14;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #C52C14;
+
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #C52C14;
+    border-bottom: dashed #C52C14 3px;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #C52C14;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
